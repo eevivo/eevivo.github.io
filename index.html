@@ -7,51 +7,85 @@
     <title>Eevivo</title>
     <link rel="icon" type="image/png" href="favicon.png" >
     <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+    
         body {
-            margin: auto;
-            min-height: 80vh;
-            max-width: 80ch;
-            line-height: 1.6;
-            font-size: 18px;
-            padding: 2rem;
-            font-family: Helvetica;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+          font-family: Helvetica, sans-serif;
+          font-size: 18px;
+          line-height: 1.6;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
-
+    
+        .wrapper {
+          flex: 1;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+          max-width: 80ch;
+          margin: auto;
+          text-align: center;
+        }
+    
         .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
         }
-
+    
         a {
-            text-decoration: none;
+          text-decoration: none;
         }
-    </style>
-</head>
+    
+        footer {
+          text-align: center;
+          border-top: 1px solid #ccc;
+          padding: 1rem 0;
+          width: 100%;
+        }
+    
+        footer a {
+          color: #666;
+          text-decoration: none;
+          margin: 0 10px;
+        }
+    
+        footer a:hover {
+          color: #333;
+          text-decoration: underline;
+        }
+      </style>
+    </head>
 
-<body>
-    <h1>Eevivo</h1>
-    <p>A simple tool to estimate your electric vehicle's state of health.</p>
-    <p>
-        <b>Under development</b>
-    </p>
-    <p>
-        <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_self">
-            <img src="Google_Play_badge.png" alt="Get it on Google Play" height="60" style="opacity: 0.2;">
-        </a>
-        <a href="https://apps.apple.com/app/idyourappid" target="_self">
-            <img src="Apple_Store_badge.svg" alt="Download on the App Store" height="60" style="opacity: 0.2;">
-        </a>
-    </p>
-    <!-- <p>
-        <img src="Eevivo_logo.svg" alt="Eevivo logo" height="40">
-    </p> -->
-</body>
-
-</html>
+    <body>
+        <div class="wrapper">
+          <h1>Eevivo</h1>
+          <p>A simple tool to estimate your electric vehicle's state of health.</p>
+          <p><b>Under development</b></p>
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_self">
+              <img src="Google_Play_badge.png" alt="Get it on Google Play" height="60" style="opacity: 0.2;">
+            </a>
+            <a href="https://apps.apple.com/app/idyourappid" target="_self">
+              <img src="Apple_Store_badge.svg" alt="Download on the App Store" height="60" style="opacity: 0.2;">
+            </a>
+          </p>
+        </div>
+      
+        <footer>
+          <p>
+            <a href="/privacy">Privacy</a> |
+            <a href="/deleteme">Data</a>
+          </p>
+        </footer>
+      </body>
+      
+      </html>
